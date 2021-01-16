@@ -1,0 +1,15 @@
+.navbar {
+  opacity: 1;
+}
+/* .navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-left: 80px;
+  
+} */
+.navbar-dark .navbar-brand {
+  color: rgba(230, 0, 0, 0.8);
+}
+.navbar-nav {
+  padding-left: 800px;
+}

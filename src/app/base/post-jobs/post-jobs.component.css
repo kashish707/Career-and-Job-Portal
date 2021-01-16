@@ -1,0 +1,18 @@
+#rcorners1 {
+  border-radius: 25px;
+  color: #fff;
+  background-color: #303030;
+  margin-top: 20px;
+  margin-left: 140px;
+  padding-top: 25px;
+  padding-left: 310px;
+  width: 800px;
+  height: 80px;
+}
+form {
+  margin-top: 20px;
+  margin-left: 150px;
+}
+.btn {
+  margin-left: 350px;
+}

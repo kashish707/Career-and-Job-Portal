@@ -1,0 +1,39 @@
+#rcorners1 {
+  border-radius: 25px;
+  color: #fff;
+  background-color: #303030;
+  margin-top: 20px;
+  margin-left: 150px;
+  padding-top: 25px;
+  padding-left: 290px;
+  width: 800px;
+  height: 80px;
+}
+
+table,
+.mat-paginator {
+  font-family: "Montserrat", sans-serif !important;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+.mat-header-cell {
+  background-color: #303030;
+  color: white !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+:host ::ng-deep .mat-sort-header-container {
+  display: flex;
+  justify-content: center;
+}
+
+th.mat-header-cell,
+td.mat-cell {
+  text-align: center;
+}
+.mat-row:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}

@@ -1,0 +1,91 @@
+<div id="rcorners1">
+  <h3>Post Jobs</h3>
+</div>
+
+<div class="col-md-10">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputName">Designation</label>
+      <input
+        [(ngModel)]="postJobsData.Designation"
+        type="text"
+        name="Designation"
+        class="form-control"
+        id="designation"
+        required="required"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputEmail1" required="required">Job Category</label>
+      <select
+        [(ngModel)]="postJobsData.JobCategory"
+        name="JobCategory"
+        class="form-control input-lg"
+      >
+        <option value="full_time">Full Time</option>
+        <option value="part_time">Part Time</option>
+        <option value="internship">Internship</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="inputAddress">Qualification</label>
+      <input
+        [(ngModel)]="postJobsData.Qualification"
+        type="text"
+        name="Qualification"
+        class="form-control"
+        id="qualification"
+      />
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Job Location</label>
+        <input
+          [(ngModel)]="postJobsData.JobLocation"
+          type="text"
+          name="JobLocation"
+          class="form-control"
+          id="job-location"
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputZip">Salary</label>
+        <input
+          [(ngModel)]="postJobsData.Salary"
+          type="text"
+          name="Salary"
+          class="form-control"
+          id="salary"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="job-description">Job Description</label>
+      <div>
+        <textarea
+          [(ngModel)]="postJobsData.JobDescription"
+          name="JobDescription"
+          class="form-control input-lg"
+          rows="4"
+        ></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="date-input">Posted Date</label>
+      <input
+        [(ngModel)]="postJobsData.Published_on"
+        type="text"
+        name="Published_on"
+        class="form-control"
+        id="date"
+        placeholder="yyyy-mm-dd"
+      />
+    </div>
+    <button (click)="postJobs()" type="button" class="btn btn-primary">
+      Add Job
+    </button>
+  </form>
+</div>
+<!-- <app-footer></app-footer> -->

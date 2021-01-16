@@ -1,0 +1,77 @@
+<div class="wrapper">
+  <!-- navbar -->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div type="button" id="sidebarCollapse">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="logoutUser()">Logout</a>
+        </li>
+        <li class="nav-item">
+          <img
+            src="../../assets/image/profile.jpg"
+            class="img-profile"
+            alt="profile"
+          />
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sidebar  -->
+
+  <div class="row">
+    <div class="col-md-2">
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <img class="celebal_img" src="../../assets/image/celebal.webp" />
+          <strong>CT</strong>
+        </div>
+        <ul class="list-unstyled components">
+          <div class="div">
+            <li>
+              <a href="#" routerLink="/dashboard/job-opening"
+                ><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Job Openings</a
+              >
+            </li>
+          </div>
+          <li>
+            <div>
+              <a href="#" routerLink="/dashboard/post-jobs"
+                ><i class="fa fa-upload"></i>&nbsp;&nbsp;Post Jobs</a
+              >
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="#" routerLink="/dashboard/user-response"
+                ><i class="fa fa-user"></i>&nbsp;&nbsp;User Response</a
+              >
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

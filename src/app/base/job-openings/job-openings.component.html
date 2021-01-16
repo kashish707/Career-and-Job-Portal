@@ -1,0 +1,37 @@
+<div id="rcorners1">
+  <h3>Job Openings</h3>
+</div>
+<div [hidden]="isLoading" class="container">
+  <div class="row">
+    <div *ngFor="let e of lis" class="col-md-4">
+      <div class="card mx-auto">
+        <p class="card-text">
+          <b>{{ e.Designation }}</b> <br />
+          Posted Date-6/30/20<br />
+          Total Responses-90
+        </p>
+        <div class="row btnsubmit mt-4">
+          <div class="col-md-6 col-6">
+            <button type="button" class="btn btn-primary btn-lg">
+              <span>View Response</span>
+            </button>
+          </div>
+          <div class="col-md-6 col-6">
+            <button
+              type="button"
+              class="btn btn-dark btn-lg"
+              (click)="deleteVacancy(e)"
+            >
+              <span>Delete</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <app-footer></app-footer> -->
+</div>
+<!-- loader -->
+<div class="loadingArea center" *ngIf="isLoading">
+  <app-spinner></app-spinner>
+</div>
